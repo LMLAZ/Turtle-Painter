@@ -5,3 +5,6 @@
 
 This file is not perfect, I just use it to complete the homework.
 I hope it can bring you a little reference value.
+
+requirements:
+svg.path=4.1

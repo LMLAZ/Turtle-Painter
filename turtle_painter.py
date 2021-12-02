@@ -108,7 +108,12 @@ class TPTurtlePainter:
             @param style(dict): a dict like {"class": {"attrib":"value",}}
                 SHOULD always get from TPSVGParser.get_style()
         """
-        #turtle.screensize(canvas[0], canvas[1])
+
+        #configuring screen
+        turtle.screensize(canvas[0], canvas[1])
+        turtle.title("Tomortec")
+        turtle.bgcolor("#315a78")
+
         self.turtle = turtle.Turtle()
         self.style  = style
 
