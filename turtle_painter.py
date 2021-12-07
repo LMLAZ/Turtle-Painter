@@ -1,3 +1,9 @@
+'''
+Author: Leo Zhao
+Date: 2021-12-01 14:48:10
+LastEditTime: 2021-12-07 15:18:21
+Description: Main script
+'''
 
 # DEBUG
 DEBUG = True
@@ -148,6 +154,9 @@ class TPTurtlePainter:
             
             self.turtle.penup()
 
+        self.turtle.end_fill()
+        turtle.exitonclick()
+
     def config_pen(self, config: dict):
         """
             @param config(dict): a dict like {"attrib": "value",}
@@ -175,6 +184,7 @@ if __name__=="__main__":
 
     svg_parser = TPSVGPathParser("TurtleSVGPainter/src/Icon-Tomortec.svg")
     svg_canvas = svg_parser.get_canvas()
+    # this PRECISION determines the times func iterates
     svg_points = svg_parser.get_points()
     svg_style  = svg_parser.get_style()
 
